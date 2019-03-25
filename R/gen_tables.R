@@ -27,3 +27,4 @@ gen_tables <- function(year) {
 
   return(data)
 }
+
