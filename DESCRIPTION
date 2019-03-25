@@ -1,4 +1,4 @@
-Package: fantasy
+Package: profootballref
 Title: Scrapes fantasy football statistics for the year you specify
 Version: 0.0.0.9000
 Authors@R: person("Will", "Bonnell", email = "wtb3na@virginia.edu", role = c("aut", "cre"))
