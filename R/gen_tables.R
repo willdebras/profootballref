@@ -1,8 +1,8 @@
-#' Fantasy function
+#' gen_tables function
 #'
 #' This function scrapes the pro-football-reference website for the year you specify
-#' @param year Simply specify the year to retrieve that year of stats in tabular format.
-#' @keywords cats
+#' @param year Specify the year to retrieve that year of stats in tabular format.
+#' @keywords football
 #' @export
 #' @importFrom  rvest html_table
 #' @importFrom xml2 read_html
