@@ -4,8 +4,8 @@
 #' @param year Simply specify the year to retrieve that year of stats in tabular format.
 #' @keywords cats
 #' @export
-#' @importFrom html_table rvest
-#' @importFrom read_html xml2
+#' @importFrom  rvest html_table
+#' @importFrom xml2 read_html
 #' @examples
 #' fantasy_2017 <- gen_tables(2017)
 
