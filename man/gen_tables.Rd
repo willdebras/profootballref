@@ -2,12 +2,12 @@
 % Please edit documentation in R/gen_tables.R
 \name{gen_tables}
 \alias{gen_tables}
-\title{Fantasy function}
+\title{gen_tables function}
 \usage{
 gen_tables(year)
 }
 \arguments{
-\item{year}{Simply specify the year to retrieve that year of stats in tabular format.}
+\item{year}{Specify the year to retrieve that year of stats in tabular format.}
 }
 \description{
 This function scrapes the pro-football-reference website for the year you specify
@@ -15,4 +15,4 @@ This function scrapes the pro-football-reference website for the year you specif
 \examples{
 fantasy_2017 <- gen_tables(2017)
 }
-\keyword{cats}
+\keyword{football}
