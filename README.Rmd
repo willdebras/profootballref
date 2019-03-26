@@ -1,0 +1,47 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+# profootballref
+
+The purpose of profootballref is to provide historical data for fantasy football. The package doesn't house data, but instead allows you to scrape data from pro-football-reference.com. It can scrape any data from 1970 to 2018. 
+
+## Installation
+
+You can install the released version of profootballref from [Github](https://github.com/willdebras/profootballref) with:
+
+``` {r ex2, message=FALSE, warning=FALSE}
+library(devtools)
+install_github("willdebras/profootballref")
+```
+
+## Example
+
+This is a basic example of how to use the function:
+
+```{r example}
+
+stats2014 <- profootballref::gen_tables(year = 2014)
+
+library(knitr)
+kable(head(stats2014))
+
+```
+
+Specify any year between 1970 and 2018 in the function. The function's parameters can be found with the command 
+`?gen_tables`.
+
+
+##Future plans
+
+The plan for this R package is not to replace the ffanalytics package, which does a great job of providing yearly stats, allowing one to simulate drafts, and giving users the functionality to make draft projections. This instead is useful for acquiring past data. The plan is to allow more functionality to acquire certain ranges of data over years for the purpose of helping people make models and projections based on historical data.
